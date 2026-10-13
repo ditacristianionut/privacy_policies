@@ -255,18 +255,19 @@
         <h1 id="page-title">Minimal ChargeGlow</h1>
         <p class="subtitle">
           Minimal ChargeGlow is designed as a local charging display. It shows battery level,
-          charging state, target markers, and time on your device without collecting personal data.
+          charging state, target markers, and time on your device. Optional crash reporting helps
+          the developer diagnose app failures.
         </p>
       </div>
 
       <aside class="panel summary" aria-label="Privacy summary">
         <div class="summary-card">
           <strong>Effective date</strong>
-          August 28, 2026
+          October 13, 2026
         </div>
         <div class="summary-card">
           <strong>Data collection</strong>
-          No personal data, analytics, ads, or tracking.
+          Crash diagnostics when enabled. No analytics or ads.
         </div>
         <div class="summary-card">
           <strong>Storage</strong>
@@ -280,8 +281,8 @@
         <h2>Plain-language summary</h2>
         <p>
           Minimal ChargeGlow does not create an account, does not collect your name or email,
-          does not use advertising identifiers, and does not send your charging information to
-          a server controlled by us.
+          does not use advertising identifiers, and processes charging display settings locally.
+          When crash reporting is enabled, technical diagnostics are sent to Google Firebase Crashlytics.
         </p>
       </section>
 
@@ -293,6 +294,7 @@
           <li>Current time, formatted according to your selected clock preference.</li>
           <li>Device orientation sensor data when upright-and-charging mode is enabled.</li>
           <li>Local settings such as display mode, colors, brightness mode, charge target, and OLED protection preferences.</li>
+          <li>Only when you opt in to the notification indicator, a generic on-device count of eligible active notifications. The app does not read, save, transmit, or display notification content, titles, senders, app names, or messages.</li>
         </ul>
         <p>
           This information is used locally to render the charging display and apply your preferences.
@@ -302,8 +304,19 @@
       <section class="panel">
         <h2>Information we collect</h2>
         <p>
-          We do not collect, transmit, sell, rent, or share personal information. The app does not
-          include third-party analytics, advertising SDKs, crash reporting SDKs, or user tracking.
+          The app uses Google Firebase Crashlytics to diagnose crashes and application-not-responding
+          errors. Crash reporting is enabled by default. Reports sent to Google include stack traces,
+          app version, operating system and device details, device state such as orientation and
+          battery level, and Crashlytics installation identifiers.
+          We do not attach names, email addresses, notification content, or charging settings to reports.
+          The app does not include advertising or Google Analytics SDKs.
+        </p>
+        <p>
+          You can turn off “Send crash reports” in More &gt; About. Disabling automatic reporting
+          fully takes effect on the next app launch. Crashlytics may still store crash information
+          locally while reporting is disabled; the app requests deletion of unsent reports while
+          the setting is off. Reports already sent are not deleted by this toggle.
+          See <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>.
         </p>
       </section>
 
@@ -322,10 +335,8 @@
         <ul>
           <li><strong>DreamService / screen saver:</strong> lets Android show Minimal ChargeGlow as a charging screen saver after you enable it in system settings.</li>
           <li><strong>Live wallpaper:</strong> optional lock-screen wallpaper mode where supported by the device.</li>
-          <li><strong>Notifications:</strong> used only if you enable the full-screen notification display mode.</li>
-          <li><strong>Full-screen intent:</strong> used only to request showing the charging display over the lock screen when Android allows it.</li>
-          <li><strong>Foreground service:</strong> used only for the user-started lock-screen notification watcher.</li>
           <li><strong>Device sensors:</strong> used locally for upright-device detection while the charging display is active.</li>
+          <li><strong>Notification access (optional):</strong> used only after you enable the notification indicator in the app and grant Android’s Notification access. It lets the display show a generic bell when active notifications exist; notification contents are never read or displayed.</li>
         </ul>
       </section>
 
@@ -349,9 +360,10 @@
       <section class="panel">
         <h2>Data deletion</h2>
         <p>
-          Because the app does not collect server-side personal data, there is no remote account or
-          server record to delete. You can delete local app preferences by clearing the app’s storage
-          in Android settings or uninstalling the app.
+          You can delete local app preferences and locally stored crash reports by clearing the
+          app’s storage in Android settings or uninstalling the app. Disabling crash reporting
+          prevents future automatic uploads after the next app launch, but does not remove reports
+          already sent to Firebase. For questions about uploaded diagnostics, contact the developer.
         </p>
       </section>
 
@@ -368,10 +380,6 @@
         <p>
           For privacy questions, contact the developer at
           <a href="mailto:dci.development.121@gmail.com">dci.development.121@gmail.com</a>.
-        </p>
-        <p>
-          Replace this email address with your real support or privacy contact before publishing
-          the app on Google Play.
         </p>
       </section>
     </main>
