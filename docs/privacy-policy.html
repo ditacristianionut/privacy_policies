@@ -330,36 +330,26 @@
       </section>
 
       <section class="panel">
-        <h2>App news, sale campaigns, and cloud notifications</h2>
+        <h2>App news and promotional messages</h2>
         <p>
-          The app uses <strong>Firebase In-App Messaging</strong> to show app news and sale campaigns
-          while you use the app, and <strong>Firebase Cloud Messaging</strong> to deliver remote news
-          and promotional notifications. A message received while the app is open, or opened from
-          a notification, can display an in-app sheet using the campaign title and description.
-          A sale sheet can open the purchase page; opening it does not start checkout or grant access.
+          You may receive occasional news about app updates and promotional offers, either inside
+          the app or as notifications if you allow them. Opening an offer lets you view more details;
+          it does not make a purchase.
         </p>
         <p>
-          Firebase uses installation identifiers and messaging registration information to deliver
-          campaigns. Cloud messaging subscriptions indicate whether the installation receives news
-          or eligible promotional offers. In-App Messaging reports impressions, actions, dismissals,
-          and display errors to Firebase. This is separate from Google Analytics collection, which
-          remains deactivated. Firebase may also process technical service data, such as IP addresses
-          and app information, to operate these services.
+          We use Google Firebase to deliver these messages. Firebase processes an identifier for
+          your app installation and technical information needed to provide the service. It also
+          records whether in-app messages are shown, opened, or dismissed. Google Analytics
+          collection remains disabled. Your personal notes, charging history, and the contents
+          of your other notifications are not shared for messaging.
         </p>
         <p>
           <strong>App news</strong> and <strong>Promotional offers</strong> are enabled initially.
-          Change them separately in <strong>More &gt; Notifications &amp; messages</strong>, or through
-          <strong>Message preferences</strong> on the purchase page. These choices apply to both
-          cloud-message sheets and in-app campaigns. Turning both off disables in-app campaign
-          collection and automatic cloud-messaging initialization, and requests removal of campaign
-          topic subscriptions. Subscription changes take time, so a notification already in transit
-          may still arrive. These controls do not delete previously uploaded data.
-        </p>
-        <p>
-          Purchase ownership and offer eligibility are checked with Google Play. Sale topic
-          subscriptions use the app's current purchase eligibility; the app does not send purchase
-          tokens, personal notes, charging summaries, or notification-indicator data to Firebase
-          messaging. Message preferences and campaign display history are stored on your device.
+          You can turn either off in <strong>More &gt; Notifications &amp; messages</strong>, or through
+          <strong>Message preferences</strong> on the purchase page. You can also manage notification
+          permission in Android settings. Changes may take a little time, so a notification already
+          on its way may still arrive. Turning messages off does not delete information already
+          sent to Firebase.
         </p>
       </section>
 
