@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark light">
-  <title>Privacy Policy · Minimal ChargeGlow</title>
-  <meta name="description" content="Privacy Policy for Minimal ChargeGlow, an Android charging display app.">
+  <title>Privacy Policy · Minimal Charging Screen</title>
+  <meta name="description" content="Privacy Policy for Minimal Charging Screen, the Android charging screen saver app. Learn about local data, crash reports, Firebase messaging, notifications, and your choices.">
   <style>
     :root {
       --surface: oklch(0.985 0.01 265);
@@ -252,26 +252,30 @@
     <header class="hero" aria-labelledby="page-title">
       <div class="panel intro">
         <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Privacy Policy</p>
-        <h1 id="page-title">Minimal ChargeGlow</h1>
+        <h1 id="page-title">Minimal Charging Screen</h1>
         <p class="subtitle">
-          Minimal ChargeGlow is designed as a local charging display. It shows battery level,
-          charging state, target markers, and time on your device. Optional crash reporting helps
-          the developer diagnose app failures.
+          This privacy policy applies to <strong>Minimal Charging Screen</strong>, the Android charging
+          display and screen saver app previously named Minimal ChargeGlow.
+          Its Android package name is <strong style="overflow-wrap: anywhere">com.dci.dev.minimalchargeglow</strong>.
+          The core charging display works on your device; optional online services support crash
+          diagnostics, app news, promotional messages, and Google Play purchases.
         </p>
       </div>
 
       <aside class="panel summary" aria-label="Privacy summary">
         <div class="summary-card">
-          <strong>Effective date</strong>
-          October 13, 2026
+          <strong>Effective date / last updated</strong>
+          <time datetime="2026-11-02">November 2, 2026</time>
         </div>
         <div class="summary-card">
           <strong>Data collection</strong>
-          Crash diagnostics when enabled. No analytics or ads.
+          Crash diagnostics when enabled, Firebase messaging identifiers, and in-app campaign interactions.
+          No third-party ads or advertising identifiers; Google Analytics collection is deactivated.
         </div>
         <div class="summary-card">
-          <strong>Storage</strong>
-          Preferences are stored locally on your device.
+          <strong>Your choices</strong>
+          Local display settings, separate news and offer controls, optional notification permission,
+          and a crash-reporting switch.
         </div>
       </aside>
     </header>
@@ -280,112 +284,187 @@
       <section class="panel callout">
         <h2>Plain-language summary</h2>
         <p>
-          Minimal ChargeGlow does not create an account, does not collect your name or email,
-          does not use advertising identifiers, and processes charging display settings locally.
-          When crash reporting is enabled, technical diagnostics are sent to Google Firebase Crashlytics.
+          Minimal Charging Screen does not require an account or sign-in. Charging data, personal notes,
+          appearance settings, and optional charging insights are processed locally. We do not sell
+          personal data or use advertising identifiers. Firebase processes technical diagnostics when
+          crash reporting is enabled, and messaging identifiers and campaign activity when the
+          corresponding message features are enabled. If you email the developer, we receive the
+          email address and information you choose to send.
         </p>
       </section>
 
       <section class="panel">
-        <h2>Information the app uses</h2>
-        <p>The app uses on-device Android APIs to provide its charging display features:</p>
+        <h2>Information used on your device</h2>
         <ul>
-          <li>Battery level, charging status, and charging source such as USB, AC, wireless, or dock.</li>
-          <li>Current time, formatted according to your selected clock preference.</li>
-          <li>Device orientation sensor data when upright-and-charging mode is enabled.</li>
-          <li>Local settings such as display mode, colors, brightness mode, charge target, and OLED protection preferences.</li>
-          <li>Only when you opt in to the notification indicator, a generic on-device count of eligible active notifications. The app does not read, save, transmit, or display notification content, titles, senders, app names, or messages.</li>
+          <li>Battery level, charging status and source, and supported battery readings such as current, voltage, and temperature.</li>
+          <li>Current time, date, time zone, and clock or calendar display preferences. The calendar display does not read your calendar events.</li>
+          <li>Device orientation sensor readings for upright-and-charging behavior.</li>
+          <li>Display preferences, including templates, layout, colors, fonts, brightness, quiet hours, charge targets, OLED protection, and any personal note you enter.</li>
+          <li>If you enable charging insights, measurements from charging displays and a locally saved summary of the last observed session, including times, battery levels, target, and available temperature readings.</li>
+          <li>If you enable the notification indicator and grant Android Notification access, a generic count of eligible active notifications. The app does not extract, save, transmit, or display their content, titles, senders, or app names.</li>
         </ul>
         <p>
-          This information is used locally to render the charging display and apply your preferences.
+          The app does not upload personal notes, charging-session summaries, or display preferences
+          to Firebase as campaign or diagnostic content. Crash reports can include basic device state,
+          such as battery level and orientation, as described below.
         </p>
       </section>
 
       <section class="panel">
-        <h2>Information we collect</h2>
+        <h2>Crash reports and diagnostics</h2>
         <p>
-          The app uses Google Firebase Crashlytics to diagnose crashes and application-not-responding
-          errors. Crash reporting is enabled by default. Reports sent to Google include stack traces,
-          app version, operating system and device details, device state such as orientation and
-          battery level, and Crashlytics installation identifiers.
-          We do not attach names, email addresses, notification content, or charging settings to reports.
-          The app does not include advertising or Google Analytics SDKs.
+          Google Firebase Crashlytics helps diagnose crashes and application-not-responding errors.
+          Crash reporting is enabled by default. Reports can include stack traces, app version,
+          operating system and device details, basic device state, and installation identifiers.
+          We do not attach personal notes, notification content, names, email addresses, or charging
+          display settings to these reports.
         </p>
         <p>
-          You can turn off “Send crash reports” in More &gt; About. Disabling automatic reporting
-          fully takes effect on the next app launch. Crashlytics may still store crash information
-          locally while reporting is disabled; the app requests deletion of unsent reports while
-          the setting is off. Reports already sent are not deleted by this toggle.
-          See <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>.
-        </p>
-      </section>
-
-      <section class="panel">
-        <h2>Local storage</h2>
-        <p>
-          Minimal ChargeGlow stores app preferences on your device using Android DataStore.
-          These preferences remain local to the app unless you or Android’s backup system transfer
-          app data as part of device backup or restore.
+          Turn off <strong>Send crash reports</strong> in <strong>More &gt; About</strong> to disable
+          automatic reporting. This fully takes effect on the next app launch. Crashlytics may still
+          store reports locally while reporting is disabled; the app requests deletion of unsent
+          reports while the setting is off. This switch does not delete reports already uploaded.
+          The Google Analytics SDK is included for Firebase compatibility, but Analytics collection
+          is permanently deactivated in the app.
         </p>
       </section>
 
       <section class="panel">
-        <h2>Permissions and system access</h2>
-        <p>The app may request or declare these Android capabilities:</p>
+        <h2>App news, sale campaigns, and cloud notifications</h2>
+        <p>
+          The app uses <strong>Firebase In-App Messaging</strong> to show app news and sale campaigns
+          while you use the app, and <strong>Firebase Cloud Messaging</strong> to deliver remote news
+          and promotional notifications. A message received while the app is open, or opened from
+          a notification, can display an in-app sheet using the campaign title and description.
+          A sale sheet can open the purchase page; opening it does not start checkout or grant access.
+        </p>
+        <p>
+          Firebase uses installation identifiers and messaging registration information to deliver
+          campaigns. Cloud messaging subscriptions indicate whether the installation receives news
+          or eligible promotional offers. In-App Messaging reports impressions, actions, dismissals,
+          and display errors to Firebase. This is separate from Google Analytics collection, which
+          remains deactivated. Firebase may also process technical service data, such as IP addresses
+          and app information, to operate these services.
+        </p>
+        <p>
+          <strong>App news</strong> and <strong>Promotional offers</strong> are enabled initially.
+          Change them separately in <strong>More &gt; Notifications &amp; messages</strong>, or through
+          <strong>Message preferences</strong> on the purchase page. These choices apply to both
+          cloud-message sheets and in-app campaigns. Turning both off disables in-app campaign
+          collection and automatic cloud-messaging initialization, and requests removal of campaign
+          topic subscriptions. Subscription changes take time, so a notification already in transit
+          may still arrive. These controls do not delete previously uploaded data.
+        </p>
+        <p>
+          Purchase ownership and offer eligibility are checked with Google Play. Sale topic
+          subscriptions use the app's current purchase eligibility; the app does not send purchase
+          tokens, personal notes, charging summaries, or notification-indicator data to Firebase
+          messaging. Message preferences and campaign display history are stored on your device.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>Notification permission and other system access</h2>
         <ul>
-          <li><strong>DreamService / screen saver:</strong> lets Android show Minimal ChargeGlow as a charging screen saver after you enable it in system settings.</li>
-          <li><strong>Live wallpaper:</strong> optional lock-screen wallpaper mode where supported by the device.</li>
-          <li><strong>Device sensors:</strong> used locally for upright-device detection while the charging display is active.</li>
-          <li><strong>Notification access (optional):</strong> used only after you enable the notification indicator in the app and grant Android’s Notification access. It lets the display show a generic bell when active notifications exist; notification contents are never read or displayed.</li>
+          <li><strong>Post notifications (optional):</strong> on supported Android versions, the app explains and requests permission after onboarding, or once after upgrading an existing installation. You can skip or deny it and continue using the app. Revisit <strong>More &gt; Notifications &amp; messages &gt; App notifications</strong> to request permission or open Android notification settings. News and promotional notification channels can also be managed there. Denying this permission does not by itself disable eligible foreground in-app sheets; use the category controls for that.</li>
+          <li><strong>Notification access (separate and optional):</strong> only for the generic charging-display notification indicator described above. This is different from permission to post the app's own notifications. You can revoke Notification access in Android settings.</li>
+          <li><strong>Screen saver / DreamService:</strong> lets Android show Minimal Charging Screen as a charging screen saver after you enable it in system settings.</li>
+          <li><strong>Live wallpaper:</strong> an optional wallpaper mode, including the lock screen where supported by your device.</li>
+          <li><strong>Device sensors:</strong> used locally for upright-device detection when needed.</li>
+          <li><strong>Internet access and Google Play services:</strong> used for the online services described in this policy, including messaging, diagnostics, purchases, app updates, and optional font retrieval.</li>
         </ul>
       </section>
 
       <section class="panel">
-        <h2>Google Fonts</h2>
+        <h2>Google Play purchases, updates, and fonts</h2>
         <p>
-          The app uses Android’s downloadable font support for the Inter font when available.
-          Font retrieval is handled by the Android/Google Play Services font provider on supported
-          devices. Minimal ChargeGlow does not use this to identify you or track app usage.
+          Google Play Billing handles purchase offers, payment, confirmation, and restoration.
+          The app receives purchase status and purchase tokens to check and acknowledge entitlement,
+          and stores local entitlement and trial information. The developer does not receive your
+          payment-card details. Google Play also handles in-app update checks and update installation.
+          See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> for Google's
+          handling of these services.
+        </p>
+        <p>
+          The app uses bundled fonts and Android downloadable fonts where available. Downloadable
+          font requests are handled by the Android/Google Play services font provider.
         </p>
       </section>
 
       <section class="panel">
-        <h2>Children’s privacy</h2>
+        <h2>Local storage and retention</h2>
         <p>
-          Minimal ChargeGlow is not directed to children and does not knowingly collect personal
-          information from children.
+          Minimal Charging Screen stores preferences, personal notes, trial and entitlement state,
+          charging insights, campaign history, and prompt or permission choices on your device.
+          Local data remains until it is replaced, reset by the relevant feature, or removed by
+          clearing app storage or uninstalling. Android may transfer eligible app data through device
+          backup or restore, according to your system settings.
+        </p>
+        <p>
+          To resume a notification you opened, the app may save one campaign's identifier, title,
+          description, type, and tap time in local storage excluded from Android backup. It is eligible
+          for presentation for up to 24 hours, and is cleared when consumed or replaced by a newer tap.
+          Clearing app storage also removes it.
+        </p>
+        <p>
+          Firebase states that Crashlytics retains crash data and associated identifiers for 90 days
+          before beginning removal. For Cloud Messaging and In-App Messaging, installation identifiers
+          are retained until deletion is requested through Firebase; removal from live and backup
+          systems can then take up to 180 days. See
+          <a href="https://firebase.google.com/support/privacy">Firebase's data-processing and retention information</a>.
         </p>
       </section>
 
       <section class="panel">
-        <h2>Data deletion</h2>
+        <h2>Service providers and security</h2>
         <p>
-          You can delete local app preferences and locally stored crash reports by clearing the
-          app’s storage in Android settings or uninstalling the app. Disabling crash reporting
-          prevents future automatic uploads after the next app launch, but does not remove reports
-          already sent to Firebase. For questions about uploaded diagnostics, contact the developer.
+          Google processes data for Firebase diagnostics and messaging, Google Play, and supported
+          font services as described above. Firebase uses HTTPS for data in transit and may process
+          data in countries where Google or its service providers operate, including outside your
+          country. See <a href="https://firebase.google.com/support/privacy">Firebase privacy and security information</a>
+          and <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>Your choices, deletion, and contact</h2>
+        <p>
+          You can change message categories, deny or revoke notification permissions, turn off crash
+          reporting, and disable charging insights. Clear the app's storage in Android settings or
+          uninstall it to remove local app data. Backups are managed separately through your Android
+          or Google backup settings. These actions do not automatically delete data already sent to
+          Firebase or Google Play. There is no app account to delete.
+        </p>
+        <p>
+          For privacy questions or requests concerning data already sent to a service provider,
+          contact the developer of <strong>Minimal Charging Screen</strong> at
+          <a href="mailto:dci.development.121@gmail.com">dci.development.121@gmail.com</a>.
+          If you send feedback or a privacy request by email, your email provider sends us your
+          address and the message or attachments you choose to include. We use that information
+          to respond to your request.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>Children's privacy</h2>
+        <p>
+          Minimal Charging Screen is not directed to children and the developer does not knowingly
+          collect personal information from children. Please contact the developer if you believe
+          a child has provided personal information.
         </p>
       </section>
 
       <section class="panel">
         <h2>Changes to this policy</h2>
         <p>
-          If the app’s data practices change, this policy will be updated before those changes are
-          released where required.
-        </p>
-      </section>
-
-      <section class="panel">
-        <h2>Contact</h2>
-        <p>
-          For privacy questions, contact the developer at
-          <a href="mailto:dci.development.121@gmail.com">dci.development.121@gmail.com</a>.
+          This policy will be updated to reflect changes to the app or its data practices.
+          The effective date above identifies the latest revision.
         </p>
       </section>
     </main>
 
     <footer class="footer">
-      <span>© 2026 Minimal ChargeGlow. This privacy policy is provided for app store publication and user transparency.</span>
+      <span>© 2026 Minimal Charging Screen. Privacy policy for the Android app com.dci.dev.minimalchargeglow.</span>
     </footer>
   </div>
 </body>
